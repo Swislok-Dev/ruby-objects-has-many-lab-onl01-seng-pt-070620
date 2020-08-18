@@ -15,6 +15,7 @@ class Artist
   def add_song(song)
     @songs.map do |song|
       @songs << song
+    end
     song.artist = self
     @@song_count += 1
   end
