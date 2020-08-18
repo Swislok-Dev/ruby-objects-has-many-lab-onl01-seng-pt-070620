@@ -1,17 +1,11 @@
 class Author
   attr_accessor :name
 
-  @@all = []
   @@post_count = 0
-
-  def self.all
-    @@all
-  end
 
   def initialize(name)
     @name = name
     @posts = []
-    @@all << name
   end
 
   def posts
