@@ -13,9 +13,7 @@ class Artist
   end
 
   def add_song(song)
-    @songs.map do |song|
-      @songs << song
-    end
+    @songs.push(song)
     song.artist = self
     @@song_count += 1
   end
